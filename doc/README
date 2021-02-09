@@ -1,0 +1,71 @@
+This is the source tree for the
+ Cornell Beam Instrumentation Control (CBI) 
+ BPM-specific (CBPM) library, example programs, and tools.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Library requirements:
+
+Accelerator Libraries:
+c_utils
+cesr_utils
+mpmnet
+CBInet
+
+
+GUI Capability Libraries:
+GTK+ 2.0
+
+
+3rd-party applications:
+Gnuplot
+
+
+
+Subdirectories in this project area:
+--------------------------------------
+
+actions - Functions to obtain and prepare parameters for action 
+               execution.
+             Functions to actually perform a specific action using
+               the results of the above.
+
+          [Some actions result in a DSP command being executed,
+           others have different remote or local effects as needed.]
+
+BIP_input  - Input definition files for the BIParser program that 
+             generates communication data structure header and code files.
+
+cesr_intf - Routies for interfacing with the CESR MPM control system
+            database.
+
+cesr_intf_include - Headers for support of above interfacing routines
+
+comm_code  - Auto-generated code for facilitating communications with 
+             instruments
+
+comm_include - Auto-generated headers for communication support
+
+commstruct_output - Code for outputting variously formatted communcation
+                    structure content.
+
+communication - Various general purpose instrument communication
+                functions
+
+doc - Documentation
+
+file_io - Mechanisms for configuration and data file input/output
+
+hardware_include - Headers for specific register-level instrument
+                   hardware support.
+
+include - Collection of headers needed for this library
+
+instrument_code - Code for the Analog Devices TigerSHARC DSP that resides
+                  in each BPM instrument.
+
+system - Memory setup and signal handling code for the DAQ and control library.
+
+user_io - Routines to facilitate user interaction with the control application.
+
+utils  - Sundry utility functions for data value/format 
+             manipulation, keyboard input, and status setting/display.
